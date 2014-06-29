@@ -1,0 +1,159 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 13:20:49 -0700
+Processing by DashboardController#index as HTML
+  Rendered dashboard/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 13:20:54 -0700
+Processing by DashboardController#index as HTML
+  Rendered dashboard/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/company/index" for 127.0.0.1 at 2014-06-29 13:20:56 -0700
+Processing by CompanyController#index as HTML
+  Rendered company/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 213ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/index" for 127.0.0.1 at 2014-06-29 13:20:58 -0700
+Processing by CustomersController#index as HTML
+ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("statuses")
+Completed 500 Internal Server Error in 177ms
+
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: query does not return ResultSet: PRAGMA table_info("statuses")):
+  app/models/status.rb:13:in `find_or_create_from'
+  app/models/status.rb:12:in `find_or_create_from'
+  app/controllers/customers_controller.rb:13:in `index'
+
+
+  Rendered /home/srikrishna/.rbenv/versions/jruby-1.7.12/lib/ruby/gems/shared/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (13.0ms)
+  Rendered /home/srikrishna/.rbenv/versions/jruby-1.7.12/lib/ruby/gems/shared/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/srikrishna/.rbenv/versions/jruby-1.7.12/lib/ruby/gems/shared/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (118.0ms)
+  [1m[36m (8.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35m (136.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (120.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_info"
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateStatuses (20111112225446)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "statuses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status_text" varchar(255), "creator" varchar(255), "remote_id" varchar(255), "followers_count" integer, "positivity_score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111112225446')
+Migrating to CreateAnalytics (20111230203038)
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "analytics" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "positivity_followers_r" decimal, "positivity_stdv" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111230203038')
+  [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (1.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+
+
+Started GET "/customers/index" for 127.0.0.1 at 2014-06-29 13:22:30 -0700
+Processing by CustomersController#index as HTML
+  [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "statuses"[0m
+  [1m[35mStatus Load (4.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '5c3ee8e89f93d724c8e22d9b97' LIMIT 1
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'i50f', NULL, NULL, '5c3ee8e89f93d724c8e22d9b97', 'n4l pej4ono2 ruby 5g4gfnakm lf2ja2j51', '2014-06-29 20:22:31.281000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'bf77cab2a99af05bf8215f5bef' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'm7g6f078893', NULL, NULL, 'bf77cab2a99af05bf8215f5bef', 'i8f35 c8 b8ondf79b n0 k6m9jli 38k cfe jruby 77ied', '2014-06-29 20:22:31.471000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '3a370deb050eea790be8afde89' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'ccfmeld', NULL, NULL, '3a370deb050eea790be8afde89', 'kh74 1pd9kjp3 of3nihi 22hp5gh k888 5bkim7cn m71 65a73jg1 ccb7e0gp 10e7pao ce6154kgj ruby jmedlf7i n72d2 fkhfgpini ah 4n7e5n3 0ph9l bo96i', '2014-06-29 20:22:31.555000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'c2f93c124bfa81d344c83c3971' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '2a5d', NULL, NULL, 'c2f93c124bfa81d344c83c3971', 'g24oop7ld java noep857c 4l7 l3bgi 6193f8k87 672ci1da kc5dpp6l1 heg05ad', '2014-06-29 20:22:31.652000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'a38d3894b961c2ca56de0a8840' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '091iafdd26n', NULL, NULL, 'a38d3894b961c2ca56de0a8840', 'm8 j7io6 ruby a6p6f kjbaof', '2014-06-29 20:22:31.735000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'b7629f7178d941a1dd14c69041' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'eadji', NULL, NULL, 'b7629f7178d941a1dd14c69041', 'ruby cledeno 9cjnm3k a056m32c n2p3ff0d l581ak 8chk0 bmhaa9 53dc', '2014-06-29 20:22:31.845000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'e80899d67856662155d96e10b2' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'h8al79bn', NULL, NULL, 'e80899d67856662155d96e10b2', 'b6ae739n1 ruby b17 9fjn3g1 d625eajlp bm74dp 73g5 o8o3 141a 8kle0g0 dd895fgm1 mep5d k7 c9hh 189h 4816 aep', '2014-06-29 20:22:31.968000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '554d430e08440117ae572e82ac' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '2hn6ip5e1', NULL, NULL, '554d430e08440117ae572e82ac', 'lnecm 7baij 10bocdai k4a0en9 lac m1j am co 98fd 3f8c3ok ruby 10l6 e8e660km 40ca62 amop1 bhm3 cffmf3 mc', '2014-06-29 20:22:32.076000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '5fbf2246a3c7b069fbef09185f' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '4898l', NULL, NULL, '5fbf2246a3c7b069fbef09185f', 'b5kgeh84 ckf46 jelelj18 bfc dl6 47167na8m ruby nh 7j6j5km jg17', '2014-06-29 20:22:32.198000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '7a97cbc55a1fd6e5c8230fe24e' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'e6oalkbd', NULL, NULL, '7a97cbc55a1fd6e5c8230fe24e', 'nnek39 h23bnm1 83ki hccpdg elc4o 8dalhol1 57a81bj 6np2l1 6i7833 2415p7 8liocg5jl 172ic7o hkionp80 7f61efa jruby 5cad2piec 44el6 o8h6d lah', '2014-06-29 20:22:32.280000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '66e15e607ec473599502c6eecb' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '9g42b51', NULL, NULL, '66e15e607ec473599502c6eecb', 'j9 d0ma5o adb kl94ge f0j2d5k 6m3njfk m841 hc 206583j mfb2iom4h k5g06 hi4 33l jruby 48408m7 1j7 ld5875 9c7b5d6ia el', '2014-06-29 20:22:32.369000')[0m
+  [1m[35mStatus Load (3.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '33ed63510ee680b98f10f583a0' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'igg6kam', NULL, NULL, '33ed63510ee680b98f10f583a0', '2ig16nf band4 l8 hgc fn49jg c2a988gkb 2aoah63 i102m3c3 2gjmm12n dk4gm43o7 j17j h924c3bdd h17jl4jck ruby fkkn1f', '2014-06-29 20:22:32.508000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'c516b6d57bbccababa20e6eec6' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '639l', NULL, NULL, 'c516b6d57bbccababa20e6eec6', 'ik53k9 ab06g5c9 a827m a7hl9el nlk3e44f 40on108 ruby', '2014-06-29 20:22:32.635000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'de795ba90156e80778f1dd5813' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'djoa', NULL, NULL, 'de795ba90156e80778f1dd5813', '66iadain1 201p lk dnh6k8 54p4f k4kpm7okm ruby mbh1ml9l clgdee78 ipm7b0l h5go 73ce4ik64', '2014-06-29 20:22:32.751000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '85300d5fd560cbb76221f3fcbb' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'cbm', NULL, NULL, '85300d5fd560cbb76221f3fcbb', 'bboab0gji 1h hhi9 do6bjp3m 9o java eng3 n166l 31e6ef bb21k8 51jjbg7 3e91p 8jcf8b5 74p7 3160ie4i3 ikem', '2014-06-29 20:22:32.855000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '7c441bcf916a42fbd67b9bcc8b' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'fbci', NULL, NULL, '7c441bcf916a42fbd67b9bcc8b', 'ej1lkpi41 0c825n8 ilbi9kf 9k6o b32 java', '2014-06-29 20:22:32.966000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '7b1754306e86eae7f4a9ed0289' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'o1jn', NULL, NULL, '7b1754306e86eae7f4a9ed0289', 'mm6e 33dl70 a2dpg7nfj he4 jruby cn9 47 e6meaca 0beb9k nfa9bp8lh 00e2k 2fppdmi0', '2014-06-29 20:22:33.110000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '806f1cb1680b97e8294daed917' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '034g', NULL, NULL, '806f1cb1680b97e8294daed917', 'e65pi9 f6g7p5j i9n57 1ki0 java p57991c lnkp i6he26io0 bb5i161', '2014-06-29 20:22:33.224000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '5e90b3787ec63fa2ae96692f3f' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', '5g37a', NULL, NULL, '5e90b3787ec63fa2ae96692f3f', '609k5 java jpidk5eb cfeihhpe 2mmhao1n 615hbif 2fm6im dhob ihlpi16l', '2014-06-29 20:22:33.349000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'fd2a1a165e98590c8396a9af17' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'nnl2pa', NULL, NULL, 'fd2a1a165e98590c8396a9af17', '1hkn6 h2k m8 mem 843o36 319kapl nf2ooen k5b46id2 f12fbm6om dph749 1c4jnd5 do cg5m6cdnn fe48j 2g70g jruby 5g0lj nkidfn', '2014-06-29 20:22:33.470000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'acbe2a3dac2169c3055c187264' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:31.000000', 'b6g1gfm', NULL, NULL, 'acbe2a3dac2169c3055c187264', 'lj04aamb ruby jme33dmm m9 hb2b03bl ekfj 5bk hp5n786c i2 6dnke bj00h anioa', '2014-06-29 20:22:33.595000')[0m
+  Rendered customers/index.html.erb within layouts/application (197.0ms)
+Completed 200 OK in 3020ms (Views: 285.0ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/customers/index" for 127.0.0.1 at 2014-06-29 13:22:37 -0700
+Processing by CustomersController#index as HTML
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '3a54de22c9ed92498c3e68499c' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'jab0af1', NULL, NULL, '3a54de22c9ed92498c3e68499c', 'p7dppkfj c5gg ruby ah jbfd45 43n8m86hi g455 gk0n 5gd liknn5 ml am0i imbbp4', '2014-06-29 20:22:37.385000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '89c56f4fd643bea16e4a003e5f' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'd47', NULL, NULL, '89c56f4fd643bea16e4a003e5f', '35i9l hcl7f ig6 200fngam 6mpa8 kln jruby 323ff abf995o6l mjgcjfh 43g 1aem 537j1 odbbj2iga 5ief', '2014-06-29 20:22:37.563000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '8f57df6ea360c017034b8d3d90' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'ml78', NULL, NULL, '8f57df6ea360c017034b8d3d90', 'f3n 2l k6mn7n jruby kn224ff4 6l11p1m g5ojcc foco5 fmh23d71', '2014-06-29 20:22:37.720000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '42cf8ced1ff99278ad07bea57d' LIMIT 1
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', '1760', NULL, NULL, '42cf8ced1ff99278ad07bea57d', 'a0180mo ruby 41i g07l8 oj9aneo7l 7bo99 4f5pd 5dno ge1hn 2go0an1c0', '2014-06-29 20:22:37.831000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '682c214d0d54661f66e72d0107' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', '084gk02k88', NULL, NULL, '682c214d0d54661f66e72d0107', 'omdg41pi 6hj3m593j 91j8 png 653 e65e6hmj ek3 java 5fkahkg kpcgk2 6ljm88oc5 gf01 b4k7 p6 h8oj', '2014-06-29 20:22:38.064000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '04b614e6cdf0ba1161ac9e69dc' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', '0p7h', NULL, NULL, '04b614e6cdf0ba1161ac9e69dc', 'b6o6mj 077m agg1o15g b9cnm1ef el8 cc90fc k2062fo fhc2falf bnh ae6 c3nd65n6j k0j fbnkb05n java fhpil43om lch4k2nl 883ak', '2014-06-29 20:22:38.185000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '5341472c596488539cd15f05b3' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'jp8497', NULL, NULL, '5341472c596488539cd15f05b3', 'jck5jm lg cn b4mp9pmg m743cj2 hdp4j 9ehb45 lfbp j4jn plk6c07ih java 0m 8a8k jn6he3p 2jhoje9 2d61e5gii hoa a1lbmoif fen70', '2014-06-29 20:22:38.302000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '83bfb308306d90105a7fd23d17' LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'a9hob53o', NULL, NULL, '83bfb308306d90105a7fd23d17', '5i0 9nhc hhch 66 2imnhhef3 k8maj4hnk ld4enb igc4oo71 94o 58l d6g8e lphpg 001h java ohboo9ah 513 eh 34o7mh 7mc', '2014-06-29 20:22:38.419000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'e3bc52322b1e0a6a48db9f44a9' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', '5dl90bjkpci', NULL, NULL, 'e3bc52322b1e0a6a48db9f44a9', '7c ol 11nki904p el dola j77a jruby pog8g7meh 2685 l791b 6p92624fj 21 h25 9gcfi8o', '2014-06-29 20:22:38.551000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '2829486dbbd8a352d1f71f6a1a' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'df9g', NULL, NULL, '2829486dbbd8a352d1f71f6a1a', '91j e5h1m java bahabh 8cl908h 452 mj7 d136ll5p hnd3', '2014-06-29 20:22:38.675000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '2866feef2807672d822e562221' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'm44459hk', NULL, NULL, '2866feef2807672d822e562221', 'g7bpm 50015b9b 5fb99dj36 26a 2oi d0i 67og 4cj312 8m7oo nj jk k98a93ob7 ruby n0nh o9ia hfoh leg9id4lb e17bj0o', '2014-06-29 20:22:38.779000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '22ab08528b08a0e8ba56ac6df4' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'k15nkkc6nh', NULL, NULL, '22ab08528b08a0e8ba56ac6df4', 'eei0b ch og5m5kelo 4h1 dl ruby 24bm1nm0 g5 al 01j5 ak2h a6d 25g5o', '2014-06-29 20:22:38.893000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '273eafd37318d441c1cd29b1f5' LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'fjn216', NULL, NULL, '273eafd37318d441c1cd29b1f5', 'jruby benk71n8g ol65a9ek 16co4ehc 72ca83 ik6cm2j olef f2lc 9n8c 6cf6 oo4ii4 h8e26 09mkd ceh1infg 4d16k i4ec kei96k 3p3ioo 5jdp3bl0k', '2014-06-29 20:22:39.017000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '164dae0a8eed63e1394a84b8b5' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', '7mi4', NULL, NULL, '164dae0a8eed63e1394a84b8b5', 'gf p9jhip5g6 m3hmjhlg klbk java 3oai 01bg95bkg', '2014-06-29 20:22:39.093000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '3910f3d53e719702bb0ddfc43b' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'amhk8l8e', NULL, NULL, '3910f3d53e719702bb0ddfc43b', 'k7a9 b23 ruby k8 ig 3oe cpo0 oo3j7 n34f37cc 0boadh73 1le 5545d6f8 44 bpa 1i9 6llbhge mjga5 2j6o 1ngpe4p', '2014-06-29 20:22:39.175000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'ed9df73f450e3e2db5d9bd5232' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', '2pned5oic', NULL, NULL, 'ed9df73f450e3e2db5d9bd5232', 'f18 80 jruby e7ko20dp 1261lcge3 cdjdj 4pao8 4g 32i ip d016jmpdp iepb7gp6 f7km7oh b09k d3', '2014-06-29 20:22:39.262000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '5a4ce23f6c765862a5725f7146' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'hg3k', NULL, NULL, '5a4ce23f6c765862a5725f7146', 'df5i1e8 9kh93k 85b92 0aggnm 22dlo6n3 l5bj g38 ia5 48n38p6 bdp 1bn ruby ek6968k 1hbc9pi19 pi2', '2014-06-29 20:22:39.376000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'df1105e09aa9ef079887dbce02' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'c1', NULL, NULL, 'df1105e09aa9ef079887dbce02', '7nob6mii 96 pk 6o58j jruby 8ikge8 jk00c4', '2014-06-29 20:22:39.625000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '5069c56e6ab3caac09ab3935b1' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'el38koa3edh', NULL, NULL, '5069c56e6ab3caac09ab3935b1', 'baen3a5a ip ad2bpaj 9p2 8maf5k7 jruby 079cm44l d1lokgg j385ch9 d5006n9o', '2014-06-29 20:22:39.786000')[0m
+  [1m[35mStatus Load (0.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '0b3dd401b7fd861acf4ff82193' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'eef48pbm58', NULL, NULL, '0b3dd401b7fd861acf4ff82193', '09 2lkc77 84g77i2k ea3 jruby 1k', '2014-06-29 20:22:39.863000')[0m
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '03675f8a590ffafbdfc8bb7ae5' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-06-29 20:22:37.000000', 'd3chk8', NULL, NULL, '03675f8a590ffafbdfc8bb7ae5', 'hff0d2lf3 1fbp3od cg1o im17 em ecedmlc b3cb57ca0 java a25gbi9 f6ifl0ib hoo1mo0', '2014-06-29 20:22:39.967000')[0m
+  Rendered customers/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 2889ms (Views: 135.0ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/company/index" for 127.0.0.1 at 2014-06-29 13:22:48 -0700
+Processing by CompanyController#index as HTML
+  Rendered company/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 305ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-29 13:22:50 -0700
+Processing by DashboardController#index as HTML
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms)

@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
+gem 'get_back'
+gem 'activerecord-jdbcsqlite3-adapter'
+gem 'rspec', '2.8.0'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -14,25 +16,37 @@ gem 'jquery-rails', '2.0.1'
 gem 'json', '1.6.6'
 
 # START:therubyracer
-platform :ruby do
-  gem 'therubyracer', '0.9.10'
-end
+#platform :ruby do
+#  gem 'therubyracer', '0.9.10'
+#end
 # END:therubyracer
 
+platform :jruby do
+  gem 'therubyrhino'
+end
+
 group :test do
-  gem 'rspec-rails', '2.8.1'
+  gem 'rspec-rails'
 end
 
 # START:db_driver
+#group :production do
+#  # START:pg
+##  gem 'pg', '0.13.2'
+# # END:pg
+#end
+
+#group :development, :test do
+#  # START:sqlite
+#  gem 'sqlite3', '1.3.5'
+#  # END:sqlite
+#end
+# END:db_driver
+
 group :production do
-  # START:pg
-  gem 'pg', '0.13.2'
-  # END:pg
+  gem 'jdbc-postgres'
 end
 
 group :development, :test do
-  # START:sqlite
-  gem 'sqlite3', '1.3.5'
-  # END:sqlite
+  gem 'jdbc-sqlite3'
 end
-# END:db_driver
