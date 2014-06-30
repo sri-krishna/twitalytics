@@ -169,7 +169,8 @@ Warbler::Config.new do |config|
   # config.webxml.jndi = 'jdbc/rails'
 
   config.jar_name = "twitalytics"
-#  config.dirs << "db"
+  config.dirs << "bin"
+  config.includes = FileList["Rakefile"]
 #  config.excludes = FileList["**/*/*.box"]
   config.bundle_without = []
 end

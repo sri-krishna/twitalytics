@@ -12,6 +12,7 @@ package { "openjdk-7-jdk":
   ensure => present
 }
 
-include jruby
-include apache2
-include postgres
+#include jruby
+#include apache2
+#include postgres
+include tomcat6

@@ -50,3 +50,9 @@ end
 group :development, :test do
   gem 'jdbc-sqlite3'
 end
+
+group :deploy do
+  gem "net-ssh", :require => "net/ssh"
+  gem "net-scp", :require => "net/scp"
+  gem "warbler", "1.4.3"
+end
