@@ -1,0 +1,10 @@
+jruby_max_runtimes: 1
+extensions:
+  diagnostics:
+  scheduler:
+  resque:
+    queues: critical, normal, low
+    count: 1
+    path: 'lib/workers'
+    redis_host: 'localhost:6379'
+    work_dir: 'work/resque'

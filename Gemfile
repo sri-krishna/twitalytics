@@ -4,6 +4,10 @@ gem 'rails', '3.2.3'
 gem 'get_back'
 gem 'activerecord-jdbcsqlite3-adapter'
 gem 'rspec', '2.8.0'
+gem 'trinidad', '1.3.4'
+gem 'trinidad_diagnostics_extension'
+gem 'trinidad_scheduler_extension'
+gem 'trinidad_resque_extension', '0.1.1'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

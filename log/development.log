@@ -157,3 +157,1137 @@ Started GET "/" for 127.0.0.1 at 2014-06-29 13:22:50 -0700
 Processing by DashboardController#index as HTML
   Rendered dashboard/index.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+2014-07-07 19:52:18 INFO: No global web.xml found
+2014-07-07 19:52:19 INFO: INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 19:52:19 INFO: INFO: using 1:5 runtime pool with acquire timeout of 10.0 seconds
+2014-07-07 19:52:24 INFO: INFO: added application to pool, size now = 1
+2014-07-07 19:52:24 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:52:38 INFO: 
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 12:52:38 -0700
+2014-07-07 19:52:38 INFO: Processing by DashboardController#index as HTML
+2014-07-07 19:52:38 INFO:   Rendered dashboard/index.html.erb within layouts/application (5.0ms)
+2014-07-07 19:52:39 INFO: Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+2014-07-07 19:52:39 INFO: INFO: pool was empty - getting new application instance
+2014-07-07 19:52:44 INFO: 
+
+Started GET "/customers/index" for 127.0.0.1 at 2014-07-07 12:52:44 -0700
+2014-07-07 19:52:44 INFO: Processing by CustomersController#index as HTML
+2014-07-07 19:52:44 INFO:   [1m[36m (2.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "statuses"[0m
+2014-07-07 19:52:44 INFO:   [1m[35mStatus Load (10.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'a08c14a360a4e974a003205010' LIMIT 1
+2014-07-07 19:52:44 INFO:   [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'me', NULL, NULL, 'a08c14a360a4e974a003205010', '614e57b kg4 cf5 5ll4acp 3p6m java bebio lmmn om7obfeh 49l bc8 o10c7gh8 idp6 3g1n6md 2981h lb63d4 gmd m6575on', '2014-07-07 19:52:44.669000')[0m
+2014-07-07 19:52:44 INFO:   [1m[35mStatus Load (8.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '114ab5aef0fb457ba3408f51e7' LIMIT 1
+2014-07-07 19:52:44 INFO:   [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'jh84mhioi', NULL, NULL, '114ab5aef0fb457ba3408f51e7', 'h0fb617m 0fk 642i07lh m7a3c7 d3f1gmh2 ila6559 204agl ol7dne714 8jf2ne jruby', '2014-07-07 19:52:44.733000')[0m
+2014-07-07 19:52:44 INFO:   [1m[35mStatus Load (13.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '97f405f9307dfd96cebb599678' LIMIT 1
+2014-07-07 19:52:44 INFO:   [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'lgf1e', NULL, NULL, '97f405f9307dfd96cebb599678', 'dlo9 jk 85g8c2hak 3ib98n78 p36o2ob5a 4cd c1fi89 542kn nff2np1lf nb9k3 13do java fopo1k fl8l 5p0l3f0 0n2 hha', '2014-07-07 19:52:44.792000')[0m
+2014-07-07 19:52:44 INFO:   [1m[35mStatus Load (10.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'ad3ef13584b209bf715e138248' LIMIT 1
+2014-07-07 19:52:44 INFO:   [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '98p8b5f82l4', NULL, NULL, 'ad3ef13584b209bf715e138248', 'jam fn7o2pf8 4h6 997j 40ibb1f 4d2pp7fl kof 5m007 gk1g 497cpk java n299p3', '2014-07-07 19:52:44.856000')[0m
+2014-07-07 19:52:44 INFO:   [1m[35mStatus Load (6.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '6405ef448f2cc52008f9fa0da5' LIMIT 1
+2014-07-07 19:52:44 INFO:   [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'pei1e8', NULL, NULL, '6405ef448f2cc52008f9fa0da5', '2kl9075ai ruby n84eno jnd8g1 i1k0n', '2014-07-07 19:52:44.902000')[0m
+2014-07-07 19:52:44 INFO:   [1m[35mStatus Load (9.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'a0c12aab14e68677a87abeefd2' LIMIT 1
+2014-07-07 19:52:44 INFO:   [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '85gim4a13', NULL, NULL, 'a0c12aab14e68677a87abeefd2', 'ch gnngj7e03 db74 mciem76 il3 npdg1f jruby 72k3 08g4fek53 nnehp', '2014-07-07 19:52:44.955000')[0m
+2014-07-07 19:52:44 INFO:   [1m[35mStatus Load (5.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'a23fda6192da6b7b143df40090' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '44dplk5j57', NULL, NULL, 'a23fda6192da6b7b143df40090', 'b9jgpk ruby 093 2357ej oolp2 6gchb1', '2014-07-07 19:52:44.991000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (8.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '2992a5d3756706d37d51e6dbcb' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'n4gae5l', NULL, NULL, '2992a5d3756706d37d51e6dbcb', 'd9a0 43b ne0i 2k24gpdjb gk7 9dad3c 27af i77 gj1n ruby 8976d5a 354d802m', '2014-07-07 19:52:45.048000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (24.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '176e5acc676f568e245b1fa679' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '25ae38o', NULL, NULL, '176e5acc676f568e245b1fa679', 'nphg29 677n77 2ff 68a java p0', '2014-07-07 19:52:45.118000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (17.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '4bb6dcd7c5fbff3f54dd3205a8' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '7if5lk', NULL, NULL, '4bb6dcd7c5fbff3f54dd3205a8', '7en9dn 5g5k9a4a kojl1n3 jruby a79p0b7 gb0cf0ojc', '2014-07-07 19:52:45.180000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (5.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '9f0cca6f615db50390e56595b2' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'amg7aief', NULL, NULL, '9f0cca6f615db50390e56595b2', 'pg6obb27o c5le95al 65jo25bji nfpl7 71feb 1d9 0gi3i9 enp kadc13 blb kbo o2egik egih4oci jruby', '2014-07-07 19:52:45.218000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (8.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '8187c5d17c7d2dadf907441a11' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'ine9g0h', NULL, NULL, '8187c5d17c7d2dadf907441a11', 'gdg8h o57ojk3m pe126 n9l akd3h4l3e elpohjd ruby 8pf pgp83kpj 8b5jc42 92jh285ad cl 8o5h3d kgp4b', '2014-07-07 19:52:45.267000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (8.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '311336aa96885fa249f6ae3ed4' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'ln', NULL, NULL, '311336aa96885fa249f6ae3ed4', 'java jehi 2b53om bcbm3 pcd40', '2014-07-07 19:52:45.323000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (7.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '0c2a39daeb2f376e3f78fd3498' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '9i', NULL, NULL, '0c2a39daeb2f376e3f78fd3498', '5n52mdich gacg3348 0jke p0jcpj0 0g6j5pi91 eo94 31gp85b jruby 0g0d1k9fd 2ai', '2014-07-07 19:52:45.375000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (7.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '71adcf7e26b6f7bf6792dd4f73' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '26i522', NULL, NULL, '71adcf7e26b6f7bf6792dd4f73', 'jruby 14f7al 94lp 1gm km40de81 j3gonidl 5oha66c', '2014-07-07 19:52:45.423000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (12.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = 'dd4d3ff016160cbc6e0a2797a3' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '3jb1a9dk', NULL, NULL, 'dd4d3ff016160cbc6e0a2797a3', 'iajf 0hnek ruby 88f7 11hmo401 i5d4 cbn8h54 c8h9lag cnfp4ocd lo6o4deo5 iggah2pb dginhp 09d5 13jlmk5kj o926mkb 8odh9 19nb89', '2014-07-07 19:52:45.486000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (7.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '9134488dce943f65a4fed295da' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '5lb24i4cmjg', NULL, NULL, '9134488dce943f65a4fed295da', 'fbma java mo7e078j6 1k4m9di6 9l4c2ad2 mpffbj clfd1 6mog n2500 pgg0 1aoep', '2014-07-07 19:52:45.535000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (8.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '81ada836cb046f9dacbb028e05' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '9oen', NULL, NULL, '81ada836cb046f9dacbb028e05', '0j6ep g0 3clgpkm 3c6j nll0n 5h eik417 ruby bp8e03 edp5c4io dc0p3j o8n3c 24 3k3 9p0fno a4jja', '2014-07-07 19:52:45.582000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (9.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '780d81ff4f576fae81aae7e6f4' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', '6c4ia3e9po', NULL, NULL, '780d81ff4f576fae81aae7e6f4', 'ruby 0b4 j5d 47clea18 6pn 2boc8 h5n0nca2', '2014-07-07 19:52:45.617000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (6.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '293abd5c97b7d48fc859beac10' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'gdcjpmd7o', NULL, NULL, '293abd5c97b7d48fc859beac10', '83c2 76opkf java 78033ik 4n73angb nhf j145 jb0jf 89 io ki47k3 odo4k cn60mj a5g8amedi 9jcp1l', '2014-07-07 19:52:45.665000')[0m
+2014-07-07 19:52:45 INFO:   [1m[35mStatus Load (11.0ms)[0m  SELECT "statuses".* FROM "statuses" WHERE "statuses"."remote_id" = '71f3355bf5ccae6d4bf56ad271' LIMIT 1
+2014-07-07 19:52:45 INFO:   [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "statuses" ("created_at", "creator", "followers_count", "positivity_score", "remote_id", "status_text", "updated_at") VALUES ('2014-07-07 19:52:44.000000', 'noc', NULL, NULL, '71f3355bf5ccae6d4bf56ad271', 'e72 p1gh e0dfnp 10jplo6 74fj java ngkb8 idkon 3l2', '2014-07-07 19:52:45.711000')[0m
+2014-07-07 19:52:45 INFO:   Rendered customers/index.html.erb within layouts/application (55.0ms)
+2014-07-07 19:52:45 INFO: Completed 200 OK in 1343ms (Views: 98.0ms | ActiveRecord: 323.0ms)
+2014-07-07 19:52:51 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:52:52 INFO: Stopping service Tomcat
+2014-07-07 19:52:52 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:52:52 INFO: Destroying ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:52:54 INFO: No global web.xml found
+2014-07-07 19:52:55 INFO: INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 19:52:55 INFO: INFO: using 1:5 runtime pool with acquire timeout of 10.0 seconds
+2014-07-07 19:53:01 INFO: INFO: added application to pool, size now = 1
+2014-07-07 19:53:01 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:54:19 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:54:19 INFO: Stopping service Tomcat
+2014-07-07 19:54:19 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:54:19 INFO: Destroying ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:57:40 INFO: No global web.xml found
+2014-07-07 19:57:41 INFO: INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 19:57:41 INFO: INFO: using a shared (threadsafe!) runtime
+2014-07-07 19:57:45 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:57:48 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:57:48 INFO: Stopping service Tomcat
+2014-07-07 19:57:48 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-1] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 19:57:48 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-2] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 19:57:48 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 19:57:48 INFO: Destroying ProtocolHandler ["http-bio-3000"]
+  [1m[36m (3.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35m (11.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (15.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_info"
+  [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateStatuses (20111112225446)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "statuses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status_text" varchar(255), "creator" varchar(255), "remote_id" varchar(255), "followers_count" integer, "positivity_score" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111112225446')
+Migrating to CreateAnalytics (20111230203038)
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "analytics" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "positivity_followers_r" decimal, "positivity_stdv" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111230203038')
+  [1m[36m (0.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND name = "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT name FROM sqlite_master WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36m (1.0ms)[0m  [1mSELECT name FROM sqlite_master WHERE type = 'table' AND name = "statuses"[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "statuses" WHERE (created_at < '2014-06-07 20:00:10.142000')
+2014-07-07 20:05:50 INFO: No global web.xml found
+2014-07-07 20:05:55 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:06:22 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:06:22 INFO: Stopping service Tomcat
+2014-07-07 20:06:22 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-1] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:06:22 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-2] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:06:22 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:06:22 INFO: Destroying ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:06:29 INFO: No global web.xml found
+2014-07-07 20:06:33 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:06:42 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:06:42 INFO: Stopping service Tomcat
+2014-07-07 20:06:42 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-1] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:06:42 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-2] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:06:42 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:06:42 INFO: Destroying ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:10:17 INFO: No global web.xml found
+2014-07-07 20:10:22 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:12:23 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:12:23 INFO: Stopping service Tomcat
+2014-07-07 20:12:23 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-1] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:12:23 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-2] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:12:23 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:12:23 INFO: Destroying ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:12:29 INFO: No global web.xml found
+2014-07-07 20:12:35 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:12:47 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:12:47 INFO: Stopping service Tomcat
+2014-07-07 20:12:47 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-1] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:12:47 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-2] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:12:47 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:12:47 INFO: Destroying ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:13:02 INFO: No global web.xml found
+2014-07-07 20:13:06 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:14:35 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:14:35 INFO: Stopping service Tomcat
+2014-07-07 20:14:35 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-1] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:14:35 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-2] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:14:35 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:16:02 INFO: No global web.xml found
+2014-07-07 20:16:07 INFO: Starting ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:23:13 INFO: Pausing ProtocolHandler ["http-bio-3000"]
+2014-07-07 20:23:14 INFO: Stopping service Tomcat
+2014-07-07 20:23:14 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-1] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:23:14 SEVERE: The web application [/] appears to have started a thread named [Ruby-1-JIT-2] but has failed to stop it. This is very likely to create a memory leak.
+2014-07-07 20:23:14 INFO: Stopping ProtocolHandler ["http-bio-3000"]
+2014-07-07 13:25:04 -0700 INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 13:25:04 -0700 INFO: using a shared (threadsafe!) runtime
+2014-07-07 13:25:07 -0700 INFO: An exception happened during JRuby-Rack startup
+private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x5d81532f>
+--- System
+jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+Time: 2014-07-07 13:25:07 -0700
+Server: Apache Tomcat/7.0.50
+jruby.home: /home/srikrishna/.rbenv/versions/jruby-1.7.13
+
+--- Context Init Parameters:
+jruby.compat.version = 1.9.3
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 1
+jruby.min.runtimes = 1
+jruby.rack.error = false
+jruby.rack.layout_class = JRuby::Rack::FileSystemLayout
+jruby.rack.logging = JUL
+jruby.rack.logging.name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+jruby.runtime.acquire.timeout = 5.0
+public.root = public
+rails.env = development
+rails.root = /home/srikrishna/deploy-jruby/twitalytics
+
+--- Backtrace
+TrinidadScheduler::ScheduledJob::JobError: private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x5d81532f>
+          included at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.2/lib/trinidad_scheduler_extension/app_job.rb:11
+           include at org/jruby/RubyModule.java:2119
+         inherited at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.2/lib/trinidad_scheduler_extension/app_job.rb:64
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/lib/jobs/delete_old_statuses.rb:9
+           require at org/jruby/RubyKernel.java:1065
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:1
+              load at org/jruby/RubyKernel.java:1081
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:2
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+            (root) at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:1
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+              each at org/jruby/RubyArray.java:1613
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+     instance_exec at org/jruby/RubyBasicObject.java:1562
+               run at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:30
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:588
+              each at org/jruby/RubyArray.java:1613
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:587
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:55
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:54
+       initialize! at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/application.rb:136
+           require at org/jruby/RubyKernel.java:1065
+    method_missing at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/environment.rb:13
+            (root) at file:/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/jruby-rack-1.1.14/lib/jruby-rack-1.1.14.jar!/jruby/rack/rails/environment3.rb:1
+
+--- RubyGems
+Gem.dir: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Gem.path:
+/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+/home/srikrishna/.gem/jruby/1.9
+Activated gems:
+  bundler-1.6.3
+  rake-10.3.2
+  i18n-0.6.9
+  multi_json-1.10.1
+  activesupport-3.2.3
+  builder-3.0.4
+  activemodel-3.2.3
+  erubis-2.7.0
+  journey-1.0.4
+  rack-1.4.5
+  rack-cache-1.2
+  rack-test-0.6.2
+  hike-1.2.3
+  tilt-1.4.1
+  sprockets-2.1.3
+  actionpack-3.2.3
+  mime-types-1.25.1
+  polyglot-0.3.5
+  treetop-1.4.15
+  mail-2.4.4
+  actionmailer-3.2.3
+  arel-3.0.3
+  tzinfo-0.3.39
+  activerecord-3.2.3
+  activerecord-jdbc-adapter-1.3.9
+  jdbc-sqlite3-3.7.2.1
+  activerecord-jdbcsqlite3-adapter-1.3.9
+  activeresource-3.2.3
+  coffee-script-source-1.7.0
+  execjs-2.2.1
+  coffee-script-2.2.0
+  rack-ssl-1.3.4
+  json-1.6.6-java
+  rdoc-3.12.2
+  thor-0.14.6
+  railties-3.2.3
+  coffee-rails-3.2.2
+  diff-lcs-1.1.3
+  get_back-0.1.0-java
+  jdbc-postgres-9.3.1101
+  jquery-rails-2.0.1
+  jruby-openssl-0.9.5-java
+  nokogiri-1.6.3.rc3-java
+  tins-1.3.0
+  term-ansicolor-1.3.0
+  jruby-lint-0.4.1
+  jruby-rack-1.1.14
+  rails-3.2.3
+  rspec-core-2.8.0
+  rspec-expectations-2.8.0
+  rspec-mocks-2.8.0
+  rspec-2.8.0
+  rspec-rails-2.8.1
+  sass-3.3.9
+  sass-rails-3.2.6
+  therubyrhino_jar-1.7.4
+  therubyrhino-2.0.3
+  trinidad_jars-1.4.0
+  trinidad-1.4.6
+  trinidad_diagnostics_extension-0.1.0
+  trinidad_scheduler_extension-0.1.2
+  uglifier-2.2.1
+
+--- Bundler
+Bundler.bundle_path: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Bundler.root: /home/srikrishna/deploy-jruby/twitalytics
+Gemfile: /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+Settings:
+  without = none
+  bin = bin
+  gemfile = /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+  bin_path = /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/bundler-1.6.3/bin/bundle
+
+--- JRuby-Rack Config
+compat_version = RUBY1_9
+default_logger = org.jruby.rack.logging.StandardOutLogger@38de5567
+equals = <error: >
+err = java.io.PrintStream@1df1bffd
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.JulLogger@12630565
+logger_class_name = JUL
+logger_name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+maximum_memory_buffer_size = 
+maximum_runtimes = 1
+num_initializer_threads = 
+out = java.io.PrintStream@3f91a4ec
+rackup = 
+rackup_path = 
+rewindable = true
+runtime_arguments = 
+runtime_environment = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@15257a46
+throw_init_exception = true
+2014-07-07 13:26:16 -0700 INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 13:26:16 -0700 INFO: using a shared (threadsafe!) runtime
+2014-07-07 13:26:20 -0700 INFO: An exception happened during JRuby-Rack startup
+private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0xa5eeb86>
+--- System
+jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+Time: 2014-07-07 13:26:20 -0700
+Server: Apache Tomcat/7.0.50
+jruby.home: /home/srikrishna/.rbenv/versions/jruby-1.7.13
+
+--- Context Init Parameters:
+jruby.compat.version = 1.9.3
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 1
+jruby.min.runtimes = 1
+jruby.rack.error = false
+jruby.rack.layout_class = JRuby::Rack::FileSystemLayout
+jruby.rack.logging = JUL
+jruby.rack.logging.name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+jruby.runtime.acquire.timeout = 5.0
+public.root = public
+rails.env = development
+rails.root = /home/srikrishna/deploy-jruby/twitalytics
+
+--- Backtrace
+TrinidadScheduler::ScheduledJob::JobError: private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0xa5eeb86>
+          included at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.0/lib/trinidad_scheduler_extension/app_job.rb:11
+           include at org/jruby/RubyModule.java:2119
+         inherited at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.0/lib/trinidad_scheduler_extension/app_job.rb:64
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/lib/jobs/delete_old_statuses.rb:9
+           require at org/jruby/RubyKernel.java:1065
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:1
+              load at org/jruby/RubyKernel.java:1081
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:2
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+            (root) at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:1
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+              each at org/jruby/RubyArray.java:1613
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+     instance_exec at org/jruby/RubyBasicObject.java:1562
+               run at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:30
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:588
+              each at org/jruby/RubyArray.java:1613
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:587
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:55
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:54
+       initialize! at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/application.rb:136
+           require at org/jruby/RubyKernel.java:1065
+    method_missing at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/environment.rb:13
+            (root) at file:/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/jruby-rack-1.1.14/lib/jruby-rack-1.1.14.jar!/jruby/rack/rails/environment3.rb:1
+
+--- RubyGems
+Gem.dir: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Gem.path:
+/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+/home/srikrishna/.gem/jruby/1.9
+Activated gems:
+  bundler-1.6.3
+  rake-10.3.2
+  i18n-0.6.9
+  multi_json-1.10.1
+  activesupport-3.2.3
+  builder-3.0.4
+  activemodel-3.2.3
+  erubis-2.7.0
+  journey-1.0.4
+  rack-1.4.5
+  rack-cache-1.2
+  rack-test-0.6.2
+  hike-1.2.3
+  tilt-1.4.1
+  sprockets-2.1.3
+  actionpack-3.2.3
+  mime-types-1.25.1
+  polyglot-0.3.5
+  treetop-1.4.15
+  mail-2.4.4
+  actionmailer-3.2.3
+  arel-3.0.3
+  tzinfo-0.3.39
+  activerecord-3.2.3
+  activerecord-jdbc-adapter-1.3.9
+  jdbc-sqlite3-3.7.2.1
+  activerecord-jdbcsqlite3-adapter-1.3.9
+  activeresource-3.2.3
+  coffee-script-source-1.7.0
+  execjs-2.2.1
+  coffee-script-2.2.0
+  rack-ssl-1.3.4
+  json-1.6.6-java
+  rdoc-3.12.2
+  thor-0.14.6
+  railties-3.2.3
+  coffee-rails-3.2.2
+  diff-lcs-1.1.3
+  get_back-0.1.0-java
+  jdbc-postgres-9.3.1101
+  jquery-rails-2.0.1
+  jruby-openssl-0.9.5-java
+  nokogiri-1.6.3.rc3-java
+  tins-1.3.0
+  term-ansicolor-1.3.0
+  jruby-lint-0.4.1
+  jruby-rack-1.1.14
+  rails-3.2.3
+  rspec-core-2.8.0
+  rspec-expectations-2.8.0
+  rspec-mocks-2.8.0
+  rspec-2.8.0
+  rspec-rails-2.8.1
+  sass-3.3.9
+  sass-rails-3.2.6
+  therubyrhino_jar-1.7.4
+  therubyrhino-2.0.3
+  trinidad_jars-1.4.0
+  trinidad-1.3.4
+  trinidad_diagnostics_extension-0.1.0
+  trinidad_scheduler_extension-0.1.0
+  uglifier-2.2.1
+
+--- Bundler
+Bundler.bundle_path: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Bundler.root: /home/srikrishna/deploy-jruby/twitalytics
+Gemfile: /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+Settings:
+  without = none
+  bin = bin
+  gemfile = /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+  bin_path = /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/bundler-1.6.3/bin/bundle
+
+--- JRuby-Rack Config
+compat_version = RUBY1_9
+default_logger = org.jruby.rack.logging.StandardOutLogger@2c823d00
+equals = <error: >
+err = java.io.PrintStream@6b6890aa
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.JulLogger@1da3fa09
+logger_class_name = JUL
+logger_name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+maximum_memory_buffer_size = 
+maximum_runtimes = 1
+num_initializer_threads = 
+out = java.io.PrintStream@3b06dcea
+rackup = 
+rackup_path = 
+rewindable = true
+runtime_arguments = 
+runtime_environment = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@7f480b93
+throw_init_exception = true
+2014-07-07 13:27:36 -0700 INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 13:27:36 -0700 INFO: using a shared (threadsafe!) runtime
+2014-07-07 13:27:40 -0700 INFO: An exception happened during JRuby-Rack startup
+private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x64c9ef4e>
+--- System
+jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+Time: 2014-07-07 13:27:40 -0700
+Server: Apache Tomcat/7.0.50
+jruby.home: /home/srikrishna/.rbenv/versions/jruby-1.7.13
+
+--- Context Init Parameters:
+jruby.compat.version = 1.9.3
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 1
+jruby.min.runtimes = 1
+jruby.rack.error = false
+jruby.rack.layout_class = JRuby::Rack::FileSystemLayout
+jruby.rack.logging = JUL
+jruby.rack.logging.name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+jruby.runtime.acquire.timeout = 5.0
+public.root = public
+rails.env = development
+rails.root = /home/srikrishna/deploy-jruby/twitalytics
+
+--- Backtrace
+TrinidadScheduler::ScheduledJob::JobError: private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x64c9ef4e>
+          included at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.1/lib/trinidad_scheduler_extension/app_job.rb:11
+           include at org/jruby/RubyModule.java:2119
+         inherited at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.1/lib/trinidad_scheduler_extension/app_job.rb:64
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/lib/jobs/delete_old_statuses.rb:9
+           require at org/jruby/RubyKernel.java:1065
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:1
+              load at org/jruby/RubyKernel.java:1081
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:2
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+            (root) at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:1
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+              each at org/jruby/RubyArray.java:1613
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+     instance_exec at org/jruby/RubyBasicObject.java:1562
+               run at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:30
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:588
+              each at org/jruby/RubyArray.java:1613
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:587
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:55
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:54
+       initialize! at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/application.rb:136
+           require at org/jruby/RubyKernel.java:1065
+    method_missing at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/environment.rb:13
+            (root) at file:/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/jruby-rack-1.1.14/lib/jruby-rack-1.1.14.jar!/jruby/rack/rails/environment3.rb:1
+
+--- RubyGems
+Gem.dir: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Gem.path:
+/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+/home/srikrishna/.gem/jruby/1.9
+Activated gems:
+  bundler-1.6.3
+  rake-10.3.2
+  i18n-0.6.9
+  multi_json-1.10.1
+  activesupport-3.2.3
+  builder-3.0.4
+  activemodel-3.2.3
+  erubis-2.7.0
+  journey-1.0.4
+  rack-1.4.5
+  rack-cache-1.2
+  rack-test-0.6.2
+  hike-1.2.3
+  tilt-1.4.1
+  sprockets-2.1.3
+  actionpack-3.2.3
+  mime-types-1.25.1
+  polyglot-0.3.5
+  treetop-1.4.15
+  mail-2.4.4
+  actionmailer-3.2.3
+  arel-3.0.3
+  tzinfo-0.3.39
+  activerecord-3.2.3
+  activerecord-jdbc-adapter-1.3.9
+  jdbc-sqlite3-3.7.2.1
+  activerecord-jdbcsqlite3-adapter-1.3.9
+  activeresource-3.2.3
+  coffee-script-source-1.7.0
+  execjs-2.2.1
+  coffee-script-2.2.0
+  rack-ssl-1.3.4
+  json-1.6.6-java
+  rdoc-3.12.2
+  thor-0.14.6
+  railties-3.2.3
+  coffee-rails-3.2.2
+  diff-lcs-1.1.3
+  get_back-0.1.0-java
+  jdbc-postgres-9.3.1101
+  jquery-rails-2.0.1
+  jruby-openssl-0.9.5-java
+  nokogiri-1.6.3.rc3-java
+  tins-1.3.0
+  term-ansicolor-1.3.0
+  jruby-lint-0.4.1
+  jruby-rack-1.1.14
+  rails-3.2.3
+  rspec-core-2.8.0
+  rspec-expectations-2.8.0
+  rspec-mocks-2.8.0
+  rspec-2.8.0
+  rspec-rails-2.8.1
+  sass-3.3.9
+  sass-rails-3.2.6
+  therubyrhino_jar-1.7.4
+  therubyrhino-2.0.3
+  trinidad_jars-1.4.0
+  trinidad-1.3.4
+  trinidad_diagnostics_extension-0.1.0
+  trinidad_scheduler_extension-0.1.1
+  uglifier-2.2.1
+
+--- Bundler
+Bundler.bundle_path: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Bundler.root: /home/srikrishna/deploy-jruby/twitalytics
+Gemfile: /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+Settings:
+  without = none
+  bin = bin
+  gemfile = /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+  bin_path = /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/bundler-1.6.3/bin/bundle
+
+--- JRuby-Rack Config
+compat_version = RUBY1_9
+default_logger = org.jruby.rack.logging.StandardOutLogger@2a177484
+equals = <error: >
+err = java.io.PrintStream@326df1c4
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.JulLogger@5a5471a6
+logger_class_name = JUL
+logger_name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+maximum_memory_buffer_size = 
+maximum_runtimes = 1
+num_initializer_threads = 
+out = java.io.PrintStream@7c6c1995
+rackup = 
+rackup_path = 
+rewindable = true
+runtime_arguments = 
+runtime_environment = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@234e13e7
+throw_init_exception = true
+2014-07-07 13:28:55 -0700 INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 13:28:55 -0700 INFO: using a shared (threadsafe!) runtime
+2014-07-07 13:28:58 -0700 INFO: An exception happened during JRuby-Rack startup
+private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x2c823d00>
+--- System
+jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+Time: 2014-07-07 13:28:58 -0700
+Server: Apache Tomcat/7.0.50
+jruby.home: /home/srikrishna/.rbenv/versions/jruby-1.7.13
+
+--- Context Init Parameters:
+jruby.compat.version = 1.9.3
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 1
+jruby.min.runtimes = 1
+jruby.rack.error = false
+jruby.rack.layout_class = JRuby::Rack::FileSystemLayout
+jruby.rack.logging = JUL
+jruby.rack.logging.name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+jruby.runtime.acquire.timeout = 5.0
+public.root = public
+rails.env = development
+rails.root = /home/srikrishna/deploy-jruby/twitalytics
+
+--- Backtrace
+TrinidadScheduler::ScheduledJob::JobError: private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x2c823d00>
+          included at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.2/lib/trinidad_scheduler_extension/app_job.rb:11
+           include at org/jruby/RubyModule.java:2119
+         inherited at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.2/lib/trinidad_scheduler_extension/app_job.rb:64
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/lib/jobs/delete_old_statuses.rb:9
+           require at org/jruby/RubyKernel.java:1065
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:1
+              load at org/jruby/RubyKernel.java:1081
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:2
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+            (root) at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:1
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+              each at org/jruby/RubyArray.java:1613
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+     instance_exec at org/jruby/RubyBasicObject.java:1562
+               run at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:30
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:588
+              each at org/jruby/RubyArray.java:1613
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:587
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:55
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:54
+       initialize! at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/application.rb:136
+           require at org/jruby/RubyKernel.java:1065
+    method_missing at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/environment.rb:13
+            (root) at file:/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/jruby-rack-1.1.14/lib/jruby-rack-1.1.14.jar!/jruby/rack/rails/environment3.rb:1
+
+--- RubyGems
+Gem.dir: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Gem.path:
+/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+/home/srikrishna/.gem/jruby/1.9
+Activated gems:
+  bundler-1.6.3
+  rake-10.3.2
+  i18n-0.6.9
+  multi_json-1.10.1
+  activesupport-3.2.3
+  builder-3.0.4
+  activemodel-3.2.3
+  erubis-2.7.0
+  journey-1.0.4
+  rack-1.4.5
+  rack-cache-1.2
+  rack-test-0.6.2
+  hike-1.2.3
+  tilt-1.4.1
+  sprockets-2.1.3
+  actionpack-3.2.3
+  mime-types-1.25.1
+  polyglot-0.3.5
+  treetop-1.4.15
+  mail-2.4.4
+  actionmailer-3.2.3
+  arel-3.0.3
+  tzinfo-0.3.39
+  activerecord-3.2.3
+  activerecord-jdbc-adapter-1.3.9
+  jdbc-sqlite3-3.7.2.1
+  activerecord-jdbcsqlite3-adapter-1.3.9
+  activeresource-3.2.3
+  coffee-script-source-1.7.0
+  execjs-2.2.1
+  coffee-script-2.2.0
+  rack-ssl-1.3.4
+  json-1.6.6-java
+  rdoc-3.12.2
+  thor-0.14.6
+  railties-3.2.3
+  coffee-rails-3.2.2
+  diff-lcs-1.1.3
+  get_back-0.1.0-java
+  jdbc-postgres-9.3.1101
+  jquery-rails-2.0.1
+  jruby-openssl-0.9.5-java
+  nokogiri-1.6.3.rc3-java
+  tins-1.3.0
+  term-ansicolor-1.3.0
+  jruby-lint-0.4.1
+  jruby-rack-1.1.14
+  rails-3.2.3
+  rspec-core-2.8.0
+  rspec-expectations-2.8.0
+  rspec-mocks-2.8.0
+  rspec-2.8.0
+  rspec-rails-2.8.1
+  sass-3.3.9
+  sass-rails-3.2.6
+  therubyrhino_jar-1.7.4
+  therubyrhino-2.0.3
+  trinidad_jars-1.4.0
+  trinidad-1.3.4
+  trinidad_diagnostics_extension-0.1.0
+  trinidad_scheduler_extension-0.1.2
+  uglifier-2.2.1
+
+--- Bundler
+Bundler.bundle_path: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Bundler.root: /home/srikrishna/deploy-jruby/twitalytics
+Gemfile: /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+Settings:
+  without = none
+  bin = bin
+  gemfile = /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+  bin_path = /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/bundler-1.6.3/bin/bundle
+
+--- JRuby-Rack Config
+compat_version = RUBY1_9
+default_logger = org.jruby.rack.logging.StandardOutLogger@7e42d303
+equals = <error: >
+err = java.io.PrintStream@625dc24e
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.JulLogger@42f72dd7
+logger_class_name = JUL
+logger_name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+maximum_memory_buffer_size = 
+maximum_runtimes = 1
+num_initializer_threads = 
+out = java.io.PrintStream@1957de74
+rackup = 
+rackup_path = 
+rewindable = true
+runtime_arguments = 
+runtime_environment = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@1bb1883f
+throw_init_exception = true
+2014-07-07 13:33:31 -0700 INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 13:33:31 -0700 INFO: using a shared (threadsafe!) runtime
+2014-07-07 13:33:37 -0700 INFO: An exception happened during JRuby-Rack startup
+/home/srikrishna/deploy-jruby/twitalytics/lib/jobs/delete_old_statuses.rb:10: syntax error, unexpected tINTEGER
+  :end => Time.now + 240, :repeat 3, :interval => 5000
+                                  ^
+--- System
+jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+Time: 2014-07-07 13:33:37 -0700
+Server: Apache Tomcat/7.0.50
+jruby.home: /home/srikrishna/.rbenv/versions/jruby-1.7.13
+
+--- Context Init Parameters:
+jruby.compat.version = 1.9.3
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 1
+jruby.min.runtimes = 1
+jruby.rack.error = false
+jruby.rack.layout_class = JRuby::Rack::FileSystemLayout
+jruby.rack.logging = JUL
+jruby.rack.logging.name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+jruby.runtime.acquire.timeout = 5.0
+public.root = public
+rails.env = development
+rails.root = /home/srikrishna/deploy-jruby/twitalytics
+
+--- Backtrace
+SyntaxError: /home/srikrishna/deploy-jruby/twitalytics/lib/jobs/delete_old_statuses.rb:10: syntax error, unexpected tINTEGER
+  :end => Time.now + 240, :repeat 3, :interval => 5000
+                                  ^
+           require at org/jruby/RubyKernel.java:1065
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:1
+              load at org/jruby/RubyKernel.java:1081
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:2
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+            (root) at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:1
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+              each at org/jruby/RubyArray.java:1613
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+     instance_exec at org/jruby/RubyBasicObject.java:1562
+               run at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:30
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:588
+              each at org/jruby/RubyArray.java:1613
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:587
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:55
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:54
+       initialize! at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/application.rb:136
+           require at org/jruby/RubyKernel.java:1065
+    method_missing at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/environment.rb:13
+            (root) at file:/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/jruby-rack-1.1.14/lib/jruby-rack-1.1.14.jar!/jruby/rack/rails/environment3.rb:1
+
+--- RubyGems
+Gem.dir: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Gem.path:
+/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+/home/srikrishna/.gem/jruby/1.9
+Activated gems:
+  bundler-1.6.3
+  rake-10.3.2
+  i18n-0.6.9
+  multi_json-1.10.1
+  activesupport-3.2.3
+  builder-3.0.4
+  activemodel-3.2.3
+  erubis-2.7.0
+  journey-1.0.4
+  rack-1.4.5
+  rack-cache-1.2
+  rack-test-0.6.2
+  hike-1.2.3
+  tilt-1.4.1
+  sprockets-2.1.3
+  actionpack-3.2.3
+  mime-types-1.25.1
+  polyglot-0.3.5
+  treetop-1.4.15
+  mail-2.4.4
+  actionmailer-3.2.3
+  arel-3.0.3
+  tzinfo-0.3.39
+  activerecord-3.2.3
+  activerecord-jdbc-adapter-1.3.9
+  jdbc-sqlite3-3.7.2.1
+  activerecord-jdbcsqlite3-adapter-1.3.9
+  activeresource-3.2.3
+  coffee-script-source-1.7.0
+  execjs-2.2.1
+  coffee-script-2.2.0
+  rack-ssl-1.3.4
+  json-1.6.6-java
+  rdoc-3.12.2
+  thor-0.14.6
+  railties-3.2.3
+  coffee-rails-3.2.2
+  diff-lcs-1.1.3
+  get_back-0.1.0-java
+  jdbc-postgres-9.3.1101
+  jquery-rails-2.0.1
+  jruby-openssl-0.9.5-java
+  nokogiri-1.6.3.rc3-java
+  tins-1.3.0
+  term-ansicolor-1.3.0
+  jruby-lint-0.4.1
+  jruby-rack-1.1.14
+  rails-3.2.3
+  rspec-core-2.8.0
+  rspec-expectations-2.8.0
+  rspec-mocks-2.8.0
+  rspec-2.8.0
+  rspec-rails-2.8.1
+  sass-3.3.9
+  sass-rails-3.2.6
+  therubyrhino_jar-1.7.4
+  therubyrhino-2.0.3
+  trinidad_jars-1.4.0
+  trinidad-1.3.4
+  trinidad_diagnostics_extension-0.1.0
+  trinidad_scheduler_extension-0.1.2
+  uglifier-2.2.1
+
+--- Bundler
+Bundler.bundle_path: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Bundler.root: /home/srikrishna/deploy-jruby/twitalytics
+Gemfile: /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+Settings:
+  without = none
+  bin = bin
+  gemfile = /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+  bin_path = /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/bundler-1.6.3/bin/bundle
+
+--- JRuby-Rack Config
+compat_version = RUBY1_9
+default_logger = org.jruby.rack.logging.StandardOutLogger@e731942
+equals = <error: >
+err = java.io.PrintStream@625dc24e
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.JulLogger@6da1cff4
+logger_class_name = JUL
+logger_name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+maximum_memory_buffer_size = 
+maximum_runtimes = 1
+num_initializer_threads = 
+out = java.io.PrintStream@1957de74
+rackup = 
+rackup_path = 
+rewindable = true
+runtime_arguments = 
+runtime_environment = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@489a912e
+throw_init_exception = true
+2014-07-07 13:34:03 -0700 INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 13:34:03 -0700 INFO: using a shared (threadsafe!) runtime
+2014-07-07 13:34:08 -0700 INFO: An exception happened during JRuby-Rack startup
+private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x8ba52f9>
+--- System
+jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+Time: 2014-07-07 13:34:08 -0700
+Server: Apache Tomcat/7.0.50
+jruby.home: /home/srikrishna/.rbenv/versions/jruby-1.7.13
+
+--- Context Init Parameters:
+jruby.compat.version = 1.9.3
+jruby.initial.runtimes = 1
+jruby.max.runtimes = 1
+jruby.min.runtimes = 1
+jruby.rack.error = false
+jruby.rack.layout_class = JRuby::Rack::FileSystemLayout
+jruby.rack.logging = JUL
+jruby.rack.logging.name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+jruby.runtime.acquire.timeout = 5.0
+public.root = public
+rails.env = development
+rails.root = /home/srikrishna/deploy-jruby/twitalytics
+
+--- Backtrace
+TrinidadScheduler::ScheduledJob::JobError: private method `initialize' called for #<Java::OrgQuartzImpl::StdSchedulerFactory:0x8ba52f9>
+          included at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.2/lib/trinidad_scheduler_extension/app_job.rb:11
+           include at org/jruby/RubyModule.java:2119
+         inherited at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/trinidad_scheduler_extension-0.1.2/lib/trinidad_scheduler_extension/app_job.rb:105
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/lib/jobs/delete_old_statuses.rb:9
+           require at org/jruby/RubyKernel.java:1065
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+           require at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:251
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:1
+              load at org/jruby/RubyKernel.java:1081
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/initializers/jobs.rb:2
+   load_dependency at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236
+            (root) at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:1
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+              each at org/jruby/RubyArray.java:1613
+              load at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245
+     instance_exec at org/jruby/RubyBasicObject.java:1562
+               run at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:30
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:588
+              each at org/jruby/RubyArray.java:1613
+            Engine at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/engine.rb:587
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:55
+  run_initializers at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/initializable.rb:54
+       initialize! at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/application.rb:136
+           require at org/jruby/RubyKernel.java:1065
+    method_missing at /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/railties-3.2.3/lib/rails/railtie/configurable.rb:30
+            (root) at /home/srikrishna/deploy-jruby/twitalytics/config/environment.rb:13
+            (root) at file:/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/jruby-rack-1.1.14/lib/jruby-rack-1.1.14.jar!/jruby/rack/rails/environment3.rb:1
+
+--- RubyGems
+Gem.dir: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Gem.path:
+/home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+/home/srikrishna/.gem/jruby/1.9
+Activated gems:
+  bundler-1.6.3
+  rake-10.3.2
+  i18n-0.6.9
+  multi_json-1.10.1
+  activesupport-3.2.3
+  builder-3.0.4
+  activemodel-3.2.3
+  erubis-2.7.0
+  journey-1.0.4
+  rack-1.4.5
+  rack-cache-1.2
+  rack-test-0.6.2
+  hike-1.2.3
+  tilt-1.4.1
+  sprockets-2.1.3
+  actionpack-3.2.3
+  mime-types-1.25.1
+  polyglot-0.3.5
+  treetop-1.4.15
+  mail-2.4.4
+  actionmailer-3.2.3
+  arel-3.0.3
+  tzinfo-0.3.39
+  activerecord-3.2.3
+  activerecord-jdbc-adapter-1.3.9
+  jdbc-sqlite3-3.7.2.1
+  activerecord-jdbcsqlite3-adapter-1.3.9
+  activeresource-3.2.3
+  coffee-script-source-1.7.0
+  execjs-2.2.1
+  coffee-script-2.2.0
+  rack-ssl-1.3.4
+  json-1.6.6-java
+  rdoc-3.12.2
+  thor-0.14.6
+  railties-3.2.3
+  coffee-rails-3.2.2
+  diff-lcs-1.1.3
+  get_back-0.1.0-java
+  jdbc-postgres-9.3.1101
+  jquery-rails-2.0.1
+  jruby-openssl-0.9.5-java
+  nokogiri-1.6.3.rc3-java
+  tins-1.3.0
+  term-ansicolor-1.3.0
+  jruby-lint-0.4.1
+  jruby-rack-1.1.14
+  rails-3.2.3
+  rspec-core-2.8.0
+  rspec-expectations-2.8.0
+  rspec-mocks-2.8.0
+  rspec-2.8.0
+  rspec-rails-2.8.1
+  sass-3.3.9
+  sass-rails-3.2.6
+  therubyrhino_jar-1.7.4
+  therubyrhino-2.0.3
+  trinidad_jars-1.4.0
+  trinidad-1.3.4
+  trinidad_diagnostics_extension-0.1.0
+  trinidad_scheduler_extension-0.1.2
+  uglifier-2.2.1
+
+--- Bundler
+Bundler.bundle_path: /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared
+Bundler.root: /home/srikrishna/deploy-jruby/twitalytics
+Gemfile: /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+Settings:
+  without = none
+  bin = bin
+  gemfile = /home/srikrishna/deploy-jruby/twitalytics/Gemfile
+  bin_path = /home/srikrishna/.rbenv/versions/jruby-1.7.13/lib/ruby/gems/shared/gems/bundler-1.6.3/bin/bundle
+
+--- JRuby-Rack Config
+compat_version = RUBY1_9
+default_logger = org.jruby.rack.logging.StandardOutLogger@72673456
+equals = <error: >
+err = java.io.PrintStream@625dc24e
+filter_adds_html = true
+filter_verifies_resource = false
+ignore_environment = false
+initial_memory_buffer_size = 
+initial_runtimes = 1
+jms_connection_factory = 
+jms_jndi_properties = 
+logger = org.jruby.rack.logging.JulLogger@5090b630
+logger_class_name = JUL
+logger_name = org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[default]
+maximum_memory_buffer_size = 
+maximum_runtimes = 1
+num_initializer_threads = 
+out = java.io.PrintStream@1957de74
+rackup = 
+rackup_path = 
+rewindable = true
+runtime_arguments = 
+runtime_environment = 
+runtime_timeout_seconds = 
+serial_initialization = false
+servlet_context = org.apache.catalina.core.ApplicationContextFacade@575c4b09
+throw_init_exception = true
+2014-07-07 13:36:19 -0700 INFO: jruby 1.7.13 (1.9.3p392) 2014-06-24 43f133c on OpenJDK 64-Bit Server VM 1.7.0_51-b31 [linux-amd64]
+2014-07-07 13:36:19 -0700 INFO: using a shared (threadsafe!) runtime
+2014-07-07 13:36:38 -0700 INFO: 
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 13:36:38 -0700
+2014-07-07 13:36:38 -0700 INFO: Processing by DashboardController#index as HTML
+2014-07-07 13:36:38 -0700 INFO:   Rendered dashboard/index.html.erb within layouts/application (6.0ms)
+2014-07-07 13:36:38 -0700 INFO: Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+2014-07-07 13:36:39 -0700 INFO: 
+
+Started GET "/company/index" for 127.0.0.1 at 2014-07-07 13:36:39 -0700
+2014-07-07 13:36:40 -0700 INFO: Processing by CompanyController#index as HTML
+2014-07-07 13:36:40 -0700 INFO:   Rendered company/index.html.erb within layouts/application (21.0ms)
+2014-07-07 13:36:40 -0700 INFO: Completed 200 OK in 111ms (Views: 59.0ms | ActiveRecord: 0.0ms)
