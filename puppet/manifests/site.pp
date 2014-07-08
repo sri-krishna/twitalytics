@@ -15,3 +15,5 @@ package { "openjdk-7-jdk":
 include jruby
 include apache2
 include postgres
+include redis
+include trinidad

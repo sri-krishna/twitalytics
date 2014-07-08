@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "base-jruby"
+  config.vm.box = "trinidad"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -127,4 +127,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # puppet.options = "--verbose --debug"
   end
   config.vm.network "forwarded_port", guest: 80, host: 8000
+  config.vm.network "forwarded_port", guest: 3000, host: 8888
 end

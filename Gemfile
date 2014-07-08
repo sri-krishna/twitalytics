@@ -8,6 +8,8 @@ gem 'trinidad', '1.3.4'
 gem 'trinidad_diagnostics_extension'
 gem 'trinidad_scheduler_extension'
 gem 'trinidad_resque_extension', '0.1.1'
+gem 'capistrano', '2.9.0'
+gem 'ffi-ncurses', '0.4.0'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
