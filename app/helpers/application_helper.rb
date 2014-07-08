@@ -7,4 +7,9 @@
 # Visit http://www.pragmaticprogrammer.com/titles/jkdepj for more book information.
 #---
 module ApplicationHelper
+	include TorqueBox::Injectors
+
+	def stomp_url
+		TorqueBox.fetch('stomp-endpoint')
+	end
 end

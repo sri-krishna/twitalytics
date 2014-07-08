@@ -27,6 +27,7 @@ end
 
 group :test do
   gem 'rspec-rails'
+#  gem 'torquebox-no-op', '2.0.2'
 end
 
 # START:db_driver
@@ -49,4 +50,9 @@ end
 
 group :development, :test do
   gem 'jdbc-sqlite3'
+end
+
+group :development, :production do
+	gem "torquebox", "3.1.1"
+	gem 'torquebox-rake-support'
 end

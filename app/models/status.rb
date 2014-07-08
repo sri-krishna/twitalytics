@@ -7,6 +7,11 @@
 # Visit http://www.pragmaticprogrammer.com/titles/jkdepj for more book information.
 #---
 class Status < ActiveRecord::Base
+  extend TorqueBox::Injectors
+
+  def self.topic
+    @@topic ||= TorqueBox.fetch('/topic/statuses')
+  end
 
   def self.find_or_create_from(tweets)
     r = tweets.map do |tweet|
@@ -26,9 +31,8 @@ class Status < ActiveRecord::Base
       end
     end.compact
 
-    #Resque.enqueue(UpdateAnalytics, r.map(&:id))
-
-    r
+    #r = Status.create(status_text: 'test', creator: 'me', remote_id:'3243hsjrfhskuierwer')
+    #topic.publish r.to_json
   end
 
   def retweet
@@ -36,6 +40,8 @@ class Status < ActiveRecord::Base
     # Twitter.update("RT @#{creator}: {status_text}")
     puts "Retweeting Status{id=#{id}}"
   end
+
+  always_background :retweet
   
   def preprocess!
     set_positivity_score!

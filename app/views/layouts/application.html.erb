@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Twitalytics</title>
+  <%= yield :head %>
+  <%= javascript_include_tag "/stilts-stomp.js" %>
   <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/themes/ui-lightness/jquery-ui.css" %>  
   <%= javascript_include_tag "jquery", "rails" %>
   <%= csrf_meta_tags %>
