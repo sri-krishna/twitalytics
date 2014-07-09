@@ -56,3 +56,5 @@ group :development, :production do
 	gem "torquebox", "3.1.1"
 	gem 'torquebox-rake-support'
 end
+
+gem 'torquebox-remote-deployer', '0.1.1'

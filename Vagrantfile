@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "base-jruby"
+  config.vm.box = "torquebox"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -51,7 +51,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   vb.gui = true
   #
   #   # Use VBoxManage to customize the VM. For example to change memory:
-  #   vb.customize ["modifyvm", :id, "--memory", "1024"]
+  #   vb.customize ["modifyvm", :id, "--memory", "4096"]
   # end
   #
   # View the documentation for the provider you're using for more
@@ -127,4 +127,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # puppet.options = "--verbose --debug"
   end
   config.vm.network "forwarded_port", guest: 80, host: 8000
+  config.vm.network "forwarded_port", guest: 8080, host: 8888
+  config.vm.provider "virtualbox" do |vb|
+  #  # Don't boot with headless mode
+  #   vb.gui = true
+  
+  #   # Use VBoxManage to customize the VM. For example to change memory:
+    vb.customize ["modifyvm", :id, "--memory", "1024"]
+  end
+  #config.ssh.username="torquebox"
 end
