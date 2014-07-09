@@ -58,3 +58,4 @@ group :development, :production do
 end
 
 gem 'torquebox-remote-deployer', '0.1.1'
+gem 'jmx4r'

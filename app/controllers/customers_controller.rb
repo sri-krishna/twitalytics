@@ -14,7 +14,11 @@ class CustomersController < ApplicationController
   end
 
   def retweet
-    Status.find(params[:id]).background.retweet
+  	puts "starting retweet"
+    status = Status.find(params[:id])
+    status.background.retweet
+    session[:retweets] ||= []
+    session[:retweets] << status
     redirect_to customers_path
   end
 end

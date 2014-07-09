@@ -8,6 +8,7 @@
 #---
 class DashboardController < ApplicationController
   def index
+  	@retweets = session[:retweets] || []
   end
 
 end

@@ -8,7 +8,7 @@ class TwitterStreamService
 	def start
 		@thread = Thread.new do
 			begin
-				puts "TwitterStreamService processing..."
+				#puts "TwitterStreamService processing..."
 				Status.find_or_create_from(
 					fetch_tweets_since(since_id ||= nil) do |status|
 						since_id = status["id"]

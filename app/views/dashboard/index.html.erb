@@ -1,3 +1,13 @@
 <p>
   Welcome to Twitalytics!
 </p>
+<p>
+	<% if @retweets.any? %>
+		Recent Retweets:
+		<ul>
+			<% @retweets.each do |retweet| %>
+				<li><%= retweet.status_text %></li>
+			<% end %>
+		</ul>
+	<% end %>
+</p>

@@ -3,12 +3,13 @@ TorqueBox.configure do
 
 	job DeleteOldStatuses do
 		cron "0 0/5 * * * ?"
+		singleton true
 		config do
 			max_age 30
 		end
 	end
 
-	service TwitterStreamService
+	#service TwitterStreamService
 
 	options_for Backgroundable, :concurrency => 10
 
